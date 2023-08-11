@@ -1,0 +1,85 @@
+<header class="sticky top-0 z-50 backdrop-blur-sm">
+  <nav class="border-gray-200 w-full backdrop-blur-sm px-2 sm:px-4 py-2.5">
+    <div>
+      <div
+        class="container flex flex-wrap items-center justify-between mx-auto"
+      >
+        <a href="#" class="flex items-center">
+          <span
+            class="self-center text-xl font-bold whitespace-nowrap text-gray-100"
+            >&#60;&#47;&#62;</span
+          >
+        </a>
+
+        <!-- mobile button -->
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          (click)="showMobileMenu()"
+          class="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden focus:outline-none focus:ring-gray-200 text-gray-400 hover:bg-gray-700"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <app-menu></app-menu>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div
+        [ngClass]="open ? 'block' : 'hidden'"
+        class="mt-4 block bg-gray-800 rounded"
+      >
+        <a
+          href="#home"
+          [routerLinkActive]="['text-yellow-500']"
+          class="block py-2 px-4 text-sm text-gray-200 hover:text-gray-200"
+          >Home</a
+        >
+        <a
+          href="#aboutme"
+          class="block py-2 px-4 text-sm text-gray-200 hover:text-gray-200"
+          >Sobre mí</a
+        >
+        <a
+          href="#skills"
+          class="block py-2 px-4 text-sm text-gray-200 hover:text-gray-200"
+          >Skills</a
+        >
+        <a
+          href="#projects"
+          class="block py-2 px-4 text-sm text-gray-200 hover:text-gray-200"
+          >Proyectos</a
+        >
+        <a
+          href="#xp"
+          class="block py-2 px-4 text-sm text-gray-200 hover:text-gray-200"
+          >Experiencia</a
+        >
+        <a
+          href="#contact"
+          class="block py-2 px-4 text-sm text-gray-200 hover:text-gray-200"
+          >Contacto</a
+        >
+      </div>
+    </div>
+  </nav>
+
+  <hr class="hidden md:block h-px border-0 bg-gray-800" />
+</header>

@@ -1,0 +1,116 @@
+<section id="skills" class="py-12">
+  <div
+    class="container text-left flex flex-col justify-center items-left min-h-96"
+  >
+    <span
+      class="text-gray-700 mb-3 uppercase md:text-sm text-xs tracking-widest"
+      >Skills</span
+    >
+
+    <div class="mb-4 border-b border-gray-700">
+      <ul class="flex flex-wrap -mb-px text-sm font-medium text-center">
+        <li class="mr-2" role="presentation">
+          <button
+            class="inline-block p-4 border-b-2 rounded-t-lg"
+            (click)="toggleTabs(1)"
+            [ngClass]="{
+              'text-gray-600 bg-gray-800': openTab !== 1,
+              'text-gray-950 bg-yellow-300': openTab === 1
+            }"
+          >
+            Code
+          </button>
+        </li>
+        <li class="mr-2" role="presentation">
+          <button
+            class="inline-block p-4 border-b-2 rounded-t-lg"
+            (click)="toggleTabs(2)"
+            [ngClass]="{
+              'text-gray-600 bg-gray-800': openTab !== 2,
+              'text-gray-950 bg-yellow-300': openTab === 2
+            }"
+          >
+            Preview
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div [ngClass]="{ hidden: openTab !== 1, block: openTab === 1 }">
+        <div class="rounded-lg px-4 py-4 bg-gray-800 text-white">
+          <code class="language-html">
+            <span class="token tag">
+              <span class="token tag">
+                <span class="token punctuation">&lt;</span>div
+              </span>
+              <span class="token attr-name">class</span>
+              <span class="token attr-value">
+                <span class="token punctuation attr-equals">=</span>
+                <span class="token punctuation">"</span>skills<span
+                  class="token punctuation"
+                  >"</span
+                >
+              </span>
+              <span class="token punctuation">&gt;</span><br />
+            </span>
+
+            <span class="token comment code-inside"
+              >&lt;!-- Mis skills :D --&gt;</span
+            ><br />
+
+            <span class="token tag">
+              <span class="token tag code-inside">
+                <span class="token punctuation">&lt;</span>h2
+              </span>
+              <span class="token attr-name">class</span>
+              <span class="token attr-value">
+                <span class="token punctuation attr-equals">=</span>
+                <span class="token punctuation">"</span>font-bold text-blue-500
+                text-2xl md:text-4xl<span class="token punctuation">"</span>
+              </span>
+              <span class="token punctuation">&gt;</span>
+            </span>
+            <span class="token html-text">Mis conocimientos:</span>
+            <span class="token punctuation">&lt;/</span>
+            <span class="token tag">h2</span>
+
+            <span class="token punctuation">&gt;</span>
+            <br />
+
+            <span class="token tag"
+              ><span class="token tag"
+                ><span class="token punctuation">&lt;/</span>div</span
+              ><span class="token punctuation">&gt;</span></span
+            >
+          </code>
+        </div>
+      </div>
+      <div [ngClass]="{ hidden: openTab !== 2, block: openTab === 2 }">
+        <div class="skills">
+          <h2 class="font-bold text-yellow-300 text-2xl md:text-4xl">
+            Mis conocimientos:
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-gray-200 mt-4">
+      Me considero un experto en el uso de Angular, ya que he trabajado en
+      varios proyectos utilizando este framework y he logrado crear soluciones
+      escalables y robustas para mis clientes.
+    </p>
+    <p class="text-gray-200 mt-4">
+      Me enfoco en el desarrollo Frontend en Angular por lo cuál éstas son
+      algunas de las tecnologías o herramientas que utilizo:
+    </p>
+    <ul class="text-gray-700 gap-3 flex flex-row flex-wrap mt-8">
+      <li
+        *ngFor="let item of skills"
+        class="backdrop-blur-sm cursor-pointer hover:bg-yellow-300 transition duration-200 ease-in-out hover:text-gray-900 bg-gray-800 px-4 py-1 rounded"
+      >
+        <fa-icon [icon]="item.icon"></fa-icon>
+        {{ item.name }}
+      </li>
+    </ul>
+  </div>
+</section>

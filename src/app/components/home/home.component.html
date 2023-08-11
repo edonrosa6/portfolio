@@ -1,0 +1,46 @@
+<section
+  id="home"
+  class="bg-gray-900 mb-12 py-5 h-[90vh] items-center flex justify-center relative"
+>
+  <div
+    class="text-left md:text-center container flex flex-col justify-center items-center h-96"
+  >
+    <h1
+      class="font-extrabold mr-auto md:mx-auto text-yellow-300 text-2xl lg:text-5xl text-uppercase"
+    >
+      Hola, soy
+      <div class="text-white">
+        Edson Rosales <fa-icon [icon]="faCoffee"></fa-icon>
+      </div>
+    </h1>
+
+    <div class="flex items-center justify-center mt-4 gap-2">
+      <div class="w-[0.2rem] h-[0.2rem] rounded-full bg-gray-600"></div>
+      <p
+        class="text-gray-600 text-xs mr-auto md:mx-autouppercase tracking-wider"
+      >
+        Desarrollador Frontend
+      </p>
+      <div class="w-[0.2rem] h-[0.2rem] rounded-full bg-gray-600"></div>
+    </div>
+
+    <div class="mt-5 md:mx-auto mr-auto md:flex md:flex-row flex flex-col">
+      <a
+        href="assets/CV2023.pdf"
+        target="_blank"
+        class="px-12 py-3 bg-yellow-300 rounded-full uppercase text-gray-950 transition duration-200 ease-in-out font-bold shadow-2xl hover:bg-yellow-400"
+      >
+        Descargar CV <fa-icon [icon]="faDownload"></fa-icon>
+      </a>
+    </div>
+  </div>
+
+  <div class="absolute bottom-0 md:block hidden">
+    <a
+      href="#aboutme"
+      class="absolute animate-bounce text-yellow-300 border border-yellow-300 rounded-full w-10 h-10 flex items-center justify-center"
+    >
+      <fa-icon [icon]="faArrow"></fa-icon>
+    </a>
+  </div>
+</section>

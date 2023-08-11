@@ -1,0 +1,12 @@
+<ul
+  class="flex shadow-2xl flex-col mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:text-sm md:font-medium md:border-0"
+>
+  <li *ngFor="let item of menuItems">
+    <a
+      class="hover:bg-yellow-300 transition duration-200 ease-in-out text-gray-200 hover:text-gray-800 md:space-x-8 p-4"
+      [href]="item.url"
+      aria-current="page"
+      >{{ item.name }}</a
+    >
+  </li>
+</ul>
