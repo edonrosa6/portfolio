@@ -23,10 +23,11 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(66, 87, 206);
+    border-radius: 1rem;
+    background: #e0c438
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(50, 73, 206);
+    background: #fde047;
 }
