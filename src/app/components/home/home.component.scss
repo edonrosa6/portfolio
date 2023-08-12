@@ -1,0 +1,8 @@
+.neon {
+    filter: drop-shadow(0 0 5px #fde047) drop-shadow(0 0 50px #eab308) contrast(1) brightness(1);
+}
+
+.neon:hover {
+    filter: drop-shadow(0 0 10px #fde047) drop-shadow(0 0 50px #eab308) contrast(1) brightness(1);
+
+}

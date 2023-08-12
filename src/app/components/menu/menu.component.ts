@@ -29,7 +29,7 @@ export class MenuComponent {
     },
     {
       name: "Contacto",
-      url: "#contacts"
+      url: "#contact"
     }
   ]
 }
