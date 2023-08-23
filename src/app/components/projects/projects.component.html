@@ -14,7 +14,7 @@
     >
       <article
         *ngFor="let item of projects"
-        class="bg-gray-900 max-w-sm border border-gray-800 rounded-lg shadow-2xl"
+        class="bg-gray-800 max-w-sm border border-gray-900 rounded-lg shadow-2xl"
       >
         <div class="sm:w-auto w-80">
           <a [href]="item.url" target="_blank">
@@ -40,14 +40,14 @@
                 *ngIf="item.githubUrl"
                 [href]="item.githubUrl"
                 target="_blank"
-                class="mr-3 inline-flex items-center px-3 py-2 text-sm text-gray-200 font-medium text-center rounded-lg focus:ring-4 focus:outline-none focus:ring-gray-300 hover:bg-yellow-300 hover:text-gray-800 transition duration-200 ease-in-out"
+                class="mr-3 inline-flex items-center px-3 py-2 text-sm font-medium text-center bg-yellow-200 text-gray-800 rounded-lg focus:ring-4 focus:outline-none focus:ring-gray-300 hover:bg-yellow-300 hover:text-gray-800 transition duration-200 ease-in-out"
               >
                 <fa-icon [icon]="faGithub" class="mr-2"></fa-icon> Github
               </a>
               <a
                 [href]="item.url"
                 target="_blank"
-                class="mr-3 inline-flex items-center px-3 py-2 text-sm text-gray-200 font-medium text-center bg-gray-800 rounded-lg focus:ring-4 focus:outline-none focus:ring-gray-300 hover:bg-gray-800/50 transition duration-200 ease-in-out"
+                class="mr-3 inline-flex items-center px-3 py-2 text-sm text-gray-200 font-medium text-center bg-gray-900 rounded-lg focus:ring-4 focus:outline-none focus:ring-gray-300 hover:bg-gray-900/50 transition duration-200 ease-in-out"
               >
                 <fa-icon [icon]="faLink" class="mr-2"></fa-icon> Demo
               </a>

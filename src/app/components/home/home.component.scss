@@ -1,8 +1,43 @@
 .neon {
-    filter: drop-shadow(0 0 5px #fde047) drop-shadow(0 0 50px #eab308) contrast(1) brightness(1);
+    filter: drop-shadow(0 0 5px #fde047) drop-shadow(0 0 15px #eab308) contrast(1) brightness(1);
 }
 
 .neon:hover {
-    filter: drop-shadow(0 0 10px #fde047) drop-shadow(0 0 50px #eab308) contrast(1) brightness(1);
+    filter: drop-shadow(0 0 5px #fde047) drop-shadow(0 0 30px #eab308) contrast(1) brightness(1);
 
 }
+
+
+
+/* 10 */
+.btn-10 {
+    border: 1px solid #fde047;
+    box-shadow: 0 0 5px #fde047, 0 0 5px #fde047 inset;
+    color: #fde047;
+    background: transparent;
+    z-index: 2;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border-radius: 50px;
+  }
+  .btn-10:after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #fde047;
+    transition: all 0.250s ease;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    border-radius: 50px;
+  }
+  .btn-10:hover {
+    color: #0a0a0a;
+  }
+  .btn-10:hover:after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }

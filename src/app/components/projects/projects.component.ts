@@ -51,6 +51,13 @@ export class ProjectsComponent {
         title: "Social Media App",
         description: "Red social realizada en React con Next Js 13",
         githubUrl: `${baseAddressGithub}mediAPP`
+      },
+      {
+        img: "assets/techwebsite.png",
+        url: "https://tech-edson-rosales.netlify.app/",
+        title: "Tech Website",
+        description: "Sitio web de venta de periféricos para PC",
+        githubUrl: `${baseAddressGithub}tech`
       }
     ];
   }

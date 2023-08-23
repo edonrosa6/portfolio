@@ -31,3 +31,10 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: #fde047;
 }
+
+.bg-body {
+    background-image: radial-gradient(#222 1px, transparent 0);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
+    background-color: #0a0a0a;
+}
