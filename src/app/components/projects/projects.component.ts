@@ -47,12 +47,6 @@ export class ProjectsComponent {
         githubUrl: `${baseAddressGithub}website-modern`
       },
       {
-        img: "assets/sistema-ventas.png",
-        url: "http://dev.casas-omni.com/",
-        title: "Sistema de Gestión de Ventas",
-        description: "Sistema web para gestionar las ventas de una empresa.",
-      },
-      {
         img: "assets/mediapp.png",
         url: "https://medi-app.vercel.app",
         title: "Social Media App",
